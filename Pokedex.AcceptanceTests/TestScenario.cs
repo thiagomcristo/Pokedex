@@ -5,7 +5,7 @@ namespace Pokedex.AcceptanceTests
     public class TestScenario
     {
         private readonly PokeApiClientBuilder apiClientBuilder = new PokeApiClientBuilder();
-        internal Pokemon Pokemon;
+        internal PokemonResponse Pokemon;
         private string _pokemonName;
         private const string nameOfPokemonForEnglishContent = "mewtwo";
         private const string nameOfPokemonWhichIsLegendary = "mewtwo";

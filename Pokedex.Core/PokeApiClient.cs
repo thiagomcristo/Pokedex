@@ -1,10 +1,12 @@
-﻿namespace Pokedex.Core
+﻿using System.Threading.Tasks;
+
+namespace Pokedex.Core
 {
     public class PokeApiClient : IPokeApiClient
     {
-        public Pokemon GetPokemonAsync(GetPokemonRequest getPokemonRequest)
+        public async Task<PokemonResponse> GetPokemonAsync(GetPokemonRequest getPokemonRequest)
         {
-            return new Pokemon("name", "description", "habitat", false);
+            return await Task.FromResult((PokemonResponse)null);
         }
     }
 }

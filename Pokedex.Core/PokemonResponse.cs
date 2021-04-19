@@ -1,18 +1,20 @@
 ﻿namespace Pokedex.Core
 {
-    public class Pokemon
+    public class PokemonResponse
     {
         public string Name { get; }
         public string Description { get; }
         public string Habitat { get; }//maybe this should be an enum
         public bool IsLegendary { get; }
+        public Language Language { get; }
 
-        public Pokemon(string name, string description, string habitat, bool isLegendary)
+        public PokemonResponse(string name, string description, string habitat, bool isLegendary, Language language)
         {
             Name = name;
             Description = description;
             Habitat = habitat;
             IsLegendary = isLegendary;
+            Language = language;
         }
     }
 }

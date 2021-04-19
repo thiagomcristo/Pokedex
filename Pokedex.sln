@@ -9,6 +9,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pokedex.AcceptanceTests", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pokedex.Core", "Pokedex.Core\Pokedex.Core.csproj", "{2D5B3066-0ECB-4C36-815E-54A65C68325E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pokedex.PokedexApi", "Pokedex.PokedexApi\Pokedex.PokedexApi.csproj", "{0FDDCCF4-39F8-4C32-909C-019DFE995A5F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PokedexApi.UnitTests", "PokedexApi.UnitTests\PokedexApi.UnitTests.csproj", "{23DA9E20-AF27-48AC-89F8-A672B0B04125}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,12 +27,21 @@ Global
 		{2D5B3066-0ECB-4C36-815E-54A65C68325E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2D5B3066-0ECB-4C36-815E-54A65C68325E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2D5B3066-0ECB-4C36-815E-54A65C68325E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0FDDCCF4-39F8-4C32-909C-019DFE995A5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FDDCCF4-39F8-4C32-909C-019DFE995A5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FDDCCF4-39F8-4C32-909C-019DFE995A5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FDDCCF4-39F8-4C32-909C-019DFE995A5F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23DA9E20-AF27-48AC-89F8-A672B0B04125}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23DA9E20-AF27-48AC-89F8-A672B0B04125}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23DA9E20-AF27-48AC-89F8-A672B0B04125}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23DA9E20-AF27-48AC-89F8-A672B0B04125}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{A1BE1614-A771-4B11-8683-ACA95A472774} = {90578E13-1738-4D3B-8901-3DC22D2810EC}
+		{23DA9E20-AF27-48AC-89F8-A672B0B04125} = {90578E13-1738-4D3B-8901-3DC22D2810EC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3F0E8EF6-7C51-469F-8C65-546B1353DDF3}
