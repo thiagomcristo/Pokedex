@@ -7,6 +7,7 @@ namespace Pokedex.Core
     public enum Language
     {
         English,
+        Translated,
         Yoda,
         Shakespeare
     }

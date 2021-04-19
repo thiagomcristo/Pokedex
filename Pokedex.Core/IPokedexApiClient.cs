@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace Pokedex.Core
 {
-    public interface IPokeApiClient
+    public interface IPokedexApiClient
     {
         Task<PokemonResponse> GetPokemonAsync(GetPokemonRequest getPokemonRequest);
     }

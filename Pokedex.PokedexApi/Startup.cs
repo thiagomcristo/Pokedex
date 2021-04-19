@@ -26,7 +26,10 @@ namespace Pokedex.PokedexApi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddScoped<IPokeApiClient, PokeApiClient>();
+            //Todo: does this need to be a singleton? Need do investigate how the PokeApiNet works with HttpClient instances.
+            services.AddScoped<IPokedexApiClient, PokedexApiClient>();
+
+
             services.AddControllers();
         }
 

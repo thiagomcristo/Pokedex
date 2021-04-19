@@ -9,11 +9,11 @@ namespace Pokedex.PokedexApi.Controllers
     [Route("[controller]")]
     public class PokemonController : ControllerBase
     {
-        private readonly IPokeApiClient _pokeApiClient;
+        private readonly IPokedexApiClient _pokeApiClient;
         private readonly ILogger<PokemonController> _logger;
 
         public PokemonController(
-            IPokeApiClient pokeApiClient,
+            IPokedexApiClient pokeApiClient,
             ILogger<PokemonController> logger)
         {
             _pokeApiClient = pokeApiClient;

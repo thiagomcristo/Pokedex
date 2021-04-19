@@ -2,7 +2,7 @@
 
 namespace Pokedex.Core
 {
-    public class PokeApiClient : IPokeApiClient
+    public class PokedexApiClient : IPokedexApiClient
     {
         public async Task<PokemonResponse> GetPokemonAsync(GetPokemonRequest getPokemonRequest)
         {

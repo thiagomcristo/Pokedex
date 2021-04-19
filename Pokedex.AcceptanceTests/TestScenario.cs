@@ -4,7 +4,7 @@ namespace Pokedex.AcceptanceTests
 {
     public class TestScenario
     {
-        private readonly PokeApiClientBuilder apiClientBuilder = new PokeApiClientBuilder();
+        private readonly PokedexApiClientBuilder apiClientBuilder = new PokedexApiClientBuilder();
         internal PokemonResponse Pokemon;
         private string _pokemonName;
         private const string nameOfPokemonForEnglishContent = "mewtwo";
@@ -23,7 +23,7 @@ namespace Pokedex.AcceptanceTests
             apiClientBuilder.ForPokemonName(_pokemonName);
             var (pokeApiClient, request) = apiClientBuilder.Build();
 
-            Pokemon = pokeApiClient.GetPokemonAsync(request);
+            Pokemon = pokeApiClient.GetPokemonAsync(request).GetAwaiter().GetResult();
         }
 
         internal void IAmInterestedInTranslatedContent()

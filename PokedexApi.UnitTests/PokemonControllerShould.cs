@@ -12,12 +12,12 @@ namespace PokedexApi.UnitTests
     [TestFixture]
     public class PokemonControllerShould
     {
-        private Mock<IPokeApiClient> mockApiClient;
+        private Mock<IPokedexApiClient> mockApiClient;
 
         [SetUp]
         public void SetUp()
         {
-            mockApiClient = new Mock<IPokeApiClient>();
+            mockApiClient = new Mock<IPokedexApiClient>();
         }
 
         [Test]

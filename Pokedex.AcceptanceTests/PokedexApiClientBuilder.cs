@@ -2,19 +2,20 @@
 
 namespace Pokedex.AcceptanceTests
 {
-    public class PokeApiClientBuilder
+    public class PokedexApiClientBuilder
     {
+        private Language _language;
         private string _pokemonName;
         public string PokemonName => _pokemonName;
 
         public void ForEnglishContent()
         {
-            
+            _language = Language.English;
         }
 
         public void ForTranslatedContent()
         {
-
+            _language = Language.Translated;
         }
 
         public void ForPokemonName(string pokemonName)
@@ -22,9 +23,9 @@ namespace Pokedex.AcceptanceTests
             _pokemonName = pokemonName;
         }
 
-        public (IPokeApiClient apiClient, GetPokemonRequest getPokemonRequest) Build()
+        public (IPokedexApiClient apiClient, GetPokemonRequest getPokemonRequest) Build()
         {
-            return (new PokeApiClient(), new GetPokemonRequest());
+            return (new PokedexApiClient(), new GetPokemonRequest(PokemonName, _language));
         }
     }
 }
